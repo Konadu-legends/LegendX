@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body
+        {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           margin: 0;
+           font-weight:300;
+           font-size: 20px;
+        }
+
+        form
+        {
+            width: 600px;
+            padding: 20px;
+            border: 5px solid blue;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        a      
+        {
+            font-size: 17px;
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color: rgb(160, 139, 215);">
+    <form action="localhost:3000/signup" method="POST">
+        <fieldset>
+            <legend>WELCOME ONBOARD...</legend>
+            <label for="Fname">FIRST NAME:</label>
+            <input type="text" id="Fname" name="Fname" required>
+            <br><br>
+            <label for="Lname">LAST NAME:</label>
+            <input type="text" id="Lname" name="Lname" required>
+            <br><br>
+            <label for="Mname">MIDDLE NAME (optional) :</label>
+            <input type="text" id="Mname" name="Mname">
+            <br><br>
+            <label for id="dob">DATE OF BIRTH: </label>
+            <input type="date" id="dob" name="DOB">
+            <br><br>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">MALE</label><br>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Male">FEMALE</label>
+            <br><br>
+            <label for id="Pnumber">PHONE NUMBER: </label>
+            <input type="tel" id="Pnumber" name="Pnumber" placeholder="0240123456" minlength="10" maxlength="10" required>
+            <br><br>
+            <label for id="Email">EMAIL: </label>
+            <input type="email" id="Email" name="Email" placeholder="qwerty@gmail.com" required>
+            <br><br>
+            <label for id="password">CREATE PASSWORD:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+            <label for id="Cpassword">CONFIRM PASSWORD:</label>
+            <input type="password" id="Cpassword" name="Cpassword">
+            <br><br>
+            <button type="submit" style="font-size: large; align-self: center; display: block; margin: 10px auto;">Create Account</button>
+            <a href="login.html">ALREADY HAVE AN ACCOUNT<br>LOG IN INSTEAD</a>
+         </fieldset>
+    </form>
+
+</body>
+
+</html>
