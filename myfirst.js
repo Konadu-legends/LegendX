@@ -15,7 +15,8 @@ server.createServer (function (req,res)
             req.on('end',function()
                 {    
                  const formData = new URLSearchParams(body);
-                 const newUser = {email: formData.get('email'), password: formData.get('password')}
+                 const newUser = {First name: formData
+.get('Fname'), Middle name: formData.get('Mname'), Last name: formData.get('Lname'),Date Of Birth: form data.get('DOB'), email: formData.get('Email'), password: formData.get('password')}
 
                  fs.readFile('users.json','utf8',function (err,data)
                     {
